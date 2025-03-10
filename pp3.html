@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Page Title</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  
+</head>
+<style>
+    img{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    div{
+        position: absolute;
+        left: 40px;
+        font-weight: bold;
+        font-size: 15px;
+        color: red;
+    }
+    /* phone */
+    @media only screen and (max-width:300px) {
+  #h1,#p1 {
+              font-size:20px;
+              background-color: aqua;
+              }
+
+}
+
+/* (tablets- above  600px  */
+@media only screen and (min-width:301px) and (max-width:768px) {
+   #h1,#p1 {
+    font-size:30px;
+    background-color: beige;
+              }
+  
+
+}
+
+/* laptop */
+@media only screen and (min-width:768px) {
+  #h1,#p1{
+    font-size:40px;
+    background-color: pink;
+  }
+
+  
+} 
+</style>
+<body>
+<img src="logo.png">
+<div> About</div>
+<br>
+<h1 id="h1">This is a Heading</h1>
+<p id="p1">This is a paragraph.</p>
+
+</body>
+</html>
